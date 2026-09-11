@@ -1,0 +1,19 @@
+{
+  "name": "field-service-invoice-pdf",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "node --test --import tsx test/invoice-flow.test.ts",
+    "demo": "node --import tsx src/invoice_service.ts"
+  },
+  "dependencies": {
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/node": "^26.4.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3"
+  }
+}
